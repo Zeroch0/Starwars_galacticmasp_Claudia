@@ -1,0 +1,399 @@
+/* Definir fuentes */
+@font-face {
+  font-family: 'Aurebesh';
+  src: url('../Fonts/Aurebesh.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('../Fonts/Gotham-Book.otf') format('truetype'); 
+}
+
+/* Reglas globales */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: FinkHeavy, Gotham-Book;
+	background-color: #0b0c10; /* fondo oscuro estilo espacio */
+	color: #c5c6c7; /* gris claro para texto */
+}
+
+img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+/* HEADER - Navbar */
+.container-fluid,
+.navbar-custom {
+	background-color: #1f2833; /* azul oscuro, casi negro */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	gap: 20px;
+	font-family: Gotham-Book;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+/* Logo */
+.navbar-brand {
+	width: 50px;
+	height: 50px;
+	margin-right: auto;
+}
+
+.navbar-brand .imagen-logo {
+	width: 50px;
+	height: 50px;
+	padding: 10%;
+	display: flex;
+	align-items: center;
+	transition: transform 0.3s;
+}
+
+.navbar-brand .imagen-logo:hover {
+	transform: scale(1.1);
+}
+
+/* Navegación centrada */
+.nav-links-centered {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.nav-btn {
+	background-color: #ff6f00 !important; /* naranja vibrante */
+	color: #0b0c10 !important; /* texto negro oscuro */
+	border: none !important;
+	font-family: Gotham-Book;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 10px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	text-decoration: none;
+}
+
+.nav-btn:hover {
+	background-color: #e65c00 !important; /* naranja más oscuro */
+	color: #f0f0f0 !important; /* blanco claro */
+}
+
+/* Imagen de inicio */
+.imageninicio {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: 75vh;
+	overflow: hidden;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+
+.imageninicio img {
+	width: auto;
+	height: auto;
+}
+
+main {
+	position: relative;
+	background: url('/media/landing/fondo.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+
+main::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40vh;
+	/* ajusta esto según cuánto quieres que difumine */
+	pointer-events: none;
+	z-index: 1;
+}
+
+.wishlist-title {
+	font-family: Gotham-Book;
+	color: #45a29e; /* azul agua tipo Star Wars */
+	margin-top: 0;
+	/* elimina margen superior */
+}
+
+.info {
+	font-family: Gotham-Book;
+	color: #66fcf1; /* azul neón */
+	padding: 5px;
+	margin-bottom: 100px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+}
+
+.info1 {
+	font-family: Gotham-Book;
+	color: #66fcf1;
+	padding: 5px;
+	margin-bottom: 100px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+}
+
+.videoinfo {
+	height: 80%;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.custom-bg {
+	background-color: #1f2833;
+}
+
+/* Contenedor interior con fondo y bordes redondeados */
+.about-container {
+	background-color: #212529; /* gris muy oscuro */
+	border-radius: 1rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+.about-title {
+	color: #45a29e;
+	font-weight: bold;
+	font-family: Gotham-Book;
+}
+
+/* Ajustes para mostrar 4 imágenes en fila y más pequeñas */
+.about-container .row.text-center.justify-content-center {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.about-container .row.text-center.justify-content-center > div {
+	flex: 0 0 22%;
+	max-width: 22%;
+	text-align: center;
+}
+
+
+/* Descripción inferior */
+.about-description {
+	font-weight: 500;
+	color: #45a29e;
+	max-width: 800px;
+	margin: 0 auto;
+	font-family: Gotham-Book;
+}
+
+.btn-tab {
+	background-color: #ff6f00;
+	color: #0b0c10;
+	font-family: Gotham-Book;
+	border: 2px solid #ff6f00;
+	padding: 10px 20px;
+	transition: all 0.3s ease;
+	margin-top: 10%;
+}
+
+.btn-tab:hover {
+	background-color: #e65c00;
+	color: #f0f0f0;
+}
+
+.btn-tab.active-tab {
+	background-color: #45a29e;
+	color: black;
+	font-weight: 500;
+	font-family: Gotham-Book;
+}
+
+.my-4 {
+	margin-top: 0rem !important;
+	margin-bottom: 1.5rem !important;
+}
+
+.translucent-green-bg {
+	background-color: rgba(69, 162, 158, 0.6);
+	border-radius: 80px;
+	padding: 40px;
+	max-width: 90%;
+	margin: 0 auto;
+	/* centra horizontalmente */
+}
+
+.row.justify-content-center {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+h1 {
+	font-family: Gotham-Book;
+	font-size: 2.5rem;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #66fcf1;
+}
+
+.box-title {
+	background-color: #1f2833;
+	margin-left: 45rem;
+	margin-right: 45rem;
+	margin-top: 4rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	border-radius: 1rem;
+	color: #ff6f00;
+	font-family: Gotham-Book;
+}
+
+@media (min-width: 992px) {
+	.col-lg-2-4 {
+		flex: 0 0 auto;
+		width: 20%;
+	}
+}
+
+.bg-form {
+	background-color: transparent !important;
+	padding: 2rem;
+}
+
+/* Estilos del formulario */
+.form-custom {
+	max-width: 550px;
+	width: 100%;
+	background-color: #1f2833;
+	font-family: "Gotham-Book", sans-serif;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+	color: #66fcf1;
+	/* Color general del texto */
+}
+
+/* Fondo semitransparente azul */
+.translucent-bg {
+	background-color: rgba(69, 162, 158, 0.7);
+}
+
+/* Título REGISTER (NO CAMBIAR COLOR) */
+.register-title {
+	font-size: 3rem;
+	color: #ff6f00;
+	font-family: "Gotham-Book", sans-serif;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+/* Inputs personalizados */
+.custom-input {
+	background-color: #1f2833 !important;
+	border: none !important;
+	color: #66fcf1;
+	font-family: "Gotham-Book", sans-serif;
+}
+
+/* Placeholder en azul claro */
+.custom-input::placeholder {
+	color: #66fcf1;
+	opacity: 1;
+	/* Para asegurar que se vea bien */
+}
+
+/* Contenedor del botón con fondo naranja */
+.btn-container {
+	background-color: #ff6f00;
+	padding: 0.75rem;
+	border-radius: 10px;
+	text-align: center;
+}
+
+/* Botón personalizado */
+.custom-btn {
+	background-color: #1f2833;
+	color: #ff6f00;
+	font-weight: bold;
+	font-family: "Gotham-Book", sans-serif;
+	border: none;
+	transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+	background-color: #45a29e;
+	color: #1f2833;
+}
+
+/* Aplicar fuente y color a otros elementos */
+form,
+.form-label,
+.form-check-label,
+.input-group-text,
+.invalid-feedback,
+.valid-feedback {
+	font-family: "Gotham-Book", sans-serif !important;
+	color: #66fcf1;
+}
+
+.details {
+	display: flex;
+	justify-content: center;
+	/* centra horizontalmente */
+	align-items: center;
+	/* centra verticalmente */
+	height: 10vh;
+	/* ocupa toda la pantalla */
+}
+
+.detalles {
+	text-align: center;
+	font-family: Gotham-Book;
+}
+
+
+footer {
+	font-family: Gotham-Book;
+	background-color: #1f2833;
+	color: #66fcf1;
+}
+
+footer a:hover {
+	color: #ff6f00 !important;
+}
+
+.social-icon {
+	color: #66fcf1;
+	text-decoration: none !important;
+	transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+	color: #ff6f00 !important;
+}
+
+.custom-footer {
+	background-color: #141414;
+	color: #66fcf1;
+	font-family: Gotham-Book;
+}

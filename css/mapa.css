@@ -1,0 +1,293 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita el scroll */
+  width: 100vw;
+  height: 100vh;
+}
+
+#parallax-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.overlay-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  pointer-events: none; 
+  object-position: center;
+}
+
+.title-overlay {
+  position: fixed;
+  top: 60px;  
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100000;       
+  color: #D9E7FB;
+  font-size: 80px;
+  pointer-events: none;
+  font-family: 'Gotham';   
+}
+
+.text-overlay {
+  position: fixed;
+  top: 930px;  
+  left: 12%;
+  transform: translateX(-50%);
+  z-index: 100000;       
+  color: #D9E7FB;
+  font-size: 20px;
+  font-family: 'Aurebesh'; 
+  pointer-events: none;   
+}
+
+.text-overlay2 {
+  position: fixed;
+  top: 900px;  
+  left: 87%;
+  transform: translateX(-50%);
+  z-index: 100000;       
+  color: #D9E7FB;
+  font-size: 17px;
+  font-family: 'Aurebesh'; 
+  pointer-events: none;   
+  text-align: right;
+  width: 400px;   
+  height: auto;
+}
+
+.galactic-map {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.planet-img {
+  width: 80px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.planet-img:hover {
+  transform: scale(1.5);
+  filter: brightness(1.5);
+}
+
+#galactic-map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s ease;
+}
+
+#galactic-bg {
+  position: absolute;
+  top: -5vh;
+  left: -5vw;
+  width: 110vw;
+  height: 110vh;
+  object-fit: cover;
+  transition: transform 0.1s ease;
+  pointer-events: none;
+}
+
+#start-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#start-button {
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  background-color: none;
+}
+
+.start-button button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.start-button button:hover img {
+  transform: scale(1.1);
+}
+
+#main-map.hidden {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Aurebesh';
+  src: url('../Fonts/Aurebesh.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../Fonts/Gotham-Black.otf') format('truetype');
+}
+
+.tooltip-wrapper {
+  position: relative;
+  width: 140px;
+  height: auto;
+}
+
+.tooltip-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tooltip-overlay {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  color: #D9E7FB;
+  font-size: 12px;
+  font-family: 'Aurebesh';
+}
+
+.planet-name {
+  font-family: 'Gotham';
+  font-weight: bold;
+  font-size: medium;
+  margin-top: 7px;
+}
+
+.planet-name-aurabesh {
+  font-family: 'Aurebesh';
+  font-weight: bold;
+  font-size: medium;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.tooltip-planet-img {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.tooltip-inner {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  max-width: none;
+  box-shadow: none;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip .tooltip-arrow {
+  display: none !important;
+}
+
+.fade-out {
+  animation: fadeOut 1.2s ease forwards;
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ==========================
+   MEDIA QUERIES RESPONSIVE
+   ========================== */
+@media (max-width: 768px) {
+  .title-overlay {
+    font-size: 50px;
+  }
+
+  .text-overlay {
+    font-size: 16px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .text-overlay2 {
+    font-size: 14px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  .planet-img,
+  .tooltip-planet-img {
+    width: 60px;
+  }
+
+  .planet-name,
+  .planet-name-aurabesh {
+    font-size: 12px;
+  }
+
+  #start-button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-overlay {
+    font-size: 36px;
+  }
+
+  .text-overlay,
+  .text-overlay2 {
+    font-size: 12px;
+    width: 90%;
+  }
+
+  .planet-img,
+  .tooltip-planet-img {
+    width: 50px;
+  }
+
+  .planet-name,
+  .planet-name-aurabesh {
+    font-size: 10px;
+  }
+
+  #start-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}

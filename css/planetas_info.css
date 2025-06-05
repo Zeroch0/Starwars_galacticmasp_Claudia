@@ -1,0 +1,139 @@
+.planeta {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 5%;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.alderaan-bg {
+  background-image: url('../media/planetas/fondo_planetas/Aderaan_fondo.png');
+  
+}
+
+.tatooine-bg {
+  background-image: url('../media/planetas/fondo_planetas/Tatooine_fondo.png');
+}
+
+.yavin-iv-bg {
+  background-image: url('../media/planetas/fondo_planetas/Yavin_fondo.png');
+}
+
+.hoth-bg {
+  background-image: url('../media/planetas/fondo_planetas/Hoth_fondo.png');
+}
+
+.dagobah-bg {
+  background-image: url('../media/planetas/fondo_planetas/Dagobah_fondo.png');
+}
+
+.bespin-bg {
+  background-image: url('../media/planetas/fondo_planetas/Bespin_fondo.png');
+}
+
+.endor-bg {
+  background-image: url('../media/planetas/fondo_planetas/Endor_fondo.png');
+}
+
+.naboo-bg {
+  background-image: url('../media/planetas/fondo_planetas/Naboo_fondo.png');
+}
+
+.coruscant-bg {
+  background-image: url('../media/planetas/fondo_planetas/Coruscant_fondo.png');
+}
+
+.kamino-bg {
+  background-image: url('../media/planetas/fondo_planetas/kamino_fondo.png');
+}
+
+.btn-volver {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.btn-volver img {
+  width: 40px; /* Ajusta el tamaño según lo que necesites */
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.btn-volver img:hover {
+  transform: scale(1.5);
+}
+
+
+
+/* Imagen del planeta ajustada al lado izquierdo y centrada verticalmente */
+.planet-img {
+  width: 80%;            
+  max-width: 100vh;     
+  object-fit: contain;   
+  padding-left: 5%;      
+}
+
+.linea-divisoria {
+  display: block;        
+  max-width: 300px;        
+  height: auto;           
+  margin-left: 0;  
+  margin-right: 0;  
+  margin-bottom: 20px;   
+}
+
+.titulo-planeta {
+  font-family: 'Gotham-Book';
+  font-size: 6rem;
+  margin-bottom: 20px; 
+}
+
+/* info api */
+#planet-info {
+  text-align: left;  
+  margin-left: 20px; 
+  font-family: 'Gotham-Book';  
+  font-size: 1.2rem; 
+  line-height: 1.5;                 
+}
+
+#planet-info h1 {
+  font-family: 'Aurebesh';              
+  font-size: 2rem;
+}
+
+#planet-info p {
+  font-family: 'Gotham-Book';                
+}
+.body{
+  margin-left: 20%;
+}
+
+/* Definir fuentes */
+@font-face {
+  font-family: 'Aurebesh';
+  src: url('../Fonts/Aurebesh.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('../Fonts/Gotham-Book.otf') format('truetype'); 
+}
+
+/* Por defecto: permitir scroll */
+body, html {
+  overflow: auto;
+  height: auto;
+}
+
+/* Si la pantalla es mayor de 780px: bloquear scroll */
+@media screen and (min-width: 780px) {
+  body, html {
+    overflow: hidden;
+    height: 100%;
+  }
+}

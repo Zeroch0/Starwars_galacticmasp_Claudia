@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+      <link rel="stylesheet" href="./css/landing.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   </head>
+   <main>
+      <body>
+          <!-- Sticky Header -->
+          <header class="sticky-top bg-dark">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
+            <a class="navbar-brand" href="index.html">Star Wars Planets</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+
+            <!-- Mapa Galáctico enlace directo -->
+            <li class="nav-item">
+              <a class="nav-link" href="/html/mapa.html">Mapa Galáctico</a>
+            </li>
+
+            <!-- Dropdown Precuelas -->
+            <li class="nav-item dropdown dropdown-hover">
+              <a class="nav-link dropdown-toggle" href="#" id="precuelasDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Trilogía de Anakin
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="precuelasDropdown">
+                <li><a class="dropdown-item" href="naboo.html">Naboo</a></li>
+                <li><a class="dropdown-item" href="coruscant.html">Coruscant</a></li>
+                <li><a class="dropdown-item" href="alderaan.html">Alderaan</a></li>
+                <li><a class="dropdown-item" href="kamino.html">Kamino</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown Original -->
+            <li class="nav-item dropdown dropdown-hover">
+              <a class="nav-link dropdown-toggle" href="#" id="originalDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Trilogía de Luke
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="originalDropdown">
+                <li><a class="dropdown-item" href="tatooine.html">Tatooine</a></li>
+                <li><a class="dropdown-item" href="yavin4.html">Yavin 4</a></li>
+                <li><a class="dropdown-item" href="hoth.html">Hoth</a></li>
+                <li><a class="dropdown-item" href="endor.html">Endor</a></li>
+                <li><a class="dropdown-item" href="dagobah.html">Dagobah</a></li>
+                <li><a class="dropdown-item" href="bespin.html">Bespin</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <style>
+      /* Para que el dropdown abra al hacer hover y no solo al click */
+      .dropdown-hover:hover > .dropdown-menu {
+        display: block;
+      }
+      /* Para que no se cierre cuando pasas el mouse en el menú */
+      .dropdown-menu {
+        margin-top: 0;
+      }
+    </style>
+      <div class="imageninicio">
+          <img src="/media/landing/logo_trilogia_anakin.jpg" alt="anakin Logo" />
+      </div>
+    <!-- ANAKIN -->
+        <section class="mb-5">
+          <div class="text-center mb-4">
+            <h1 class="display-2 fw-bold wishlist-title">Trilogía de Anakin</h1>
+            <img src="logo-precuelas.png" alt="Logo Precuelas" class="img-fluid" style="max-height: 100px; margin-top: 10px;">
+          </div>
+          <div class="container-xl rounded-4 p-4 shadow custom-bg">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6 text-start">
+                <h1 class="info">Información general de la Trilogía de Anakin</h1>
+                <h2 class="info1">
+                  Aquí puedes poner un resumen, descripción o datos interesantes sobre los planetas y su importancia en la historia de la trilogía precuela.
+                </h2>
+              </div>
+              <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                <div id="carouselPrecuelas" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner rounded-3 overflow-hidden shadow">
+                    <div class="carousel-item">
+                      <img src="naboo.jpg" class="d-block w-100" alt="Naboo">
+                      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Naboo</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item active">
+                      <img src="coruscant.jpg" class="d-block w-100" alt="Coruscant">
+                      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Coruscant</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="alderaan.jpg" class="d-block w-100" alt="Alderaan">
+                      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Alderaan</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="kamino.jpg" class="d-block w-100" alt="Kamino">
+                      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Kamino</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrecuelas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselPrecuelas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--planetas en cada saga  -->
+        <section class="about-section py-5">
+      <div class="container about-container p-4">
+        <h2 class="text-center about-title mb-5">Planetas trilogia Anakin</h2>
+        <div class="row text-center justify-content-center">
+          <div class="col-12 col-md-4 mb-4">
+            <img src="/media/planetas/Naboo.png" alt="Planeta 1" class="img-fluid character-img mb-2">
+            <h5 class="character-name">Mercurio</h5>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <img src="/media/planetas/coruscant.png" alt="Planeta 2" class="img-fluid character-img mb-2">
+            <h5 class="character-name">Venus</h5>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <img src="/media/planetas/Alderaan.png" alt="Planeta 3" class="img-fluid character-img mb-2">
+            <h5 class="character-name">Tierra</h5>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <img src="/media/planetas/Kamino.webp" alt="Planeta 4" class="img-fluid character-img mb-2">
+            <h5 class="character-name">Marte</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="about-description text-center mt-3">Aquí puedes poner una descripción de los planetas o cualquier texto que quieras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="imageninicio">
+          <img src="/media/landing/logo_trilogia_luke.jpg" alt="luke Logo" />
+      </div>
+    <!-- LUKE -->
+
+        <section class="mb-5">
+          <div class="text-center mb-4">
+            <h1 class="display-2 fw-bold wishlist-title">Trilogía de Luke</h1>
+            <img src="logo-originales.png" alt="Logo Originales" class="img-fluid" style="max-height: 100px; margin-top: 10px;">
+          </div>
+          <div class="container-xl rounded-4 p-4 shadow custom-bg">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6 text-start">
+                <h1 class="info">Información general de la Trilogía de Luke</h1>
+                <h2 class="info1">
+                  Aquí puedes poner un resumen, descripción o datos interesantes sobre los planetas y su importancia en la historia de la trilogía original.
+                </h2>
+              </div>
+              <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                <div id="carouselOriginales" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner rounded-3 overflow-hidden shadow">
+                    <div class="carousel-item active">
+                      <img src="tatooine.jpg" class="d-block w-100" alt="Tatooine">
+                      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Tatooine</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="endor.jpg" class="d-block w-100" alt="Endor">
+                      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Endor</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="hoth.jpg" class="d-block w-100" alt="Hoth">
+                      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Hoth</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="dagobah.jpg" class="d-block w-100" alt="Dagobah">
+                      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                        <h5>Dagobah</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselOriginales" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselOriginales" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sección de planetas Luke -->
+    <section class="about-section py-5">
+      <div class="container about-container p-4">
+        <h2 class="text-center about-title mb-5">Planetas trilogía Luke</h2>
+        <div class="col-12 col-lg-6 mt-4 mt-lg-0 mx-auto">
+                <div id="carouselLuke" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded-3 overflow-hidden shadow">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-4">
+              <img src="tatooine.jpg" class="d-block w-100" alt="Tatooine">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Tatooine</h5>
+              </div>
+            </div>
+            <div class="col-4">
+              <img src="endor.jpg" class="d-block w-100" alt="Endor">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Endor</h5>
+              </div>
+            </div>
+            <div class="col-4">
+              <img src="hoth.jpg" class="d-block w-100" alt="Hoth">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Hoth</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-4">
+              <img src="dagobah.jpg" class="d-block w-100" alt="Dagobah">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Dagobah</h5>
+              </div>
+            </div>
+            <!-- Puedes repetir imágenes o dejar vacío si no hay más -->
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselLuke" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselLuke" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p class="about-description text-center mt-3">Aquí puedes poner una descripción de los planetas o cualquier texto que quieras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Registro -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="d-flex justify-content-center align-items-center min-vh-100">
+          <form class="needs-validation p-4 rounded shadow form-custom translucent-bg" novalidate>
+              <h1 class="text-center mb-4 register-title"></h1>
+              <div class="mb-3">
+                <label for="name" class="form-label"></label>
+                <input type="text" class="form-control custom-input" id="name" required>
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="username" class="form-label"></label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control custom-input" id="username" required>
+                    <div class="invalid-feedback"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label"></label>
+                <input type="email" class="form-control custom-input" id="email" required>
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label"></label>
+                <input type="password" class="form-control custom-input" id="password" required pattern=".*[\W_].*">
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                <label class="form-check-label" for="rememberMe"></label>
+              </div>
+              <div class="p-2 rounded text-center btn-container">
+                <button class="btn custom-btn w-100" type="submit"></button>
+              </div>
+          </form>
+        </div>
+
+        <!-- Pie de pagina -->
+        <footer class="custom-footer text-center text-white mt-5 pt-4 pb-3">
+          <div class="container">
+              <div class="mb-3">
+                <a href="#" target="_blank" class="social-icon me-4 fs-4">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" target="_blank" class="social-icon me-4 fs-4">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="#" target="_blank" class="social-icon fs-4">
+                    <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+              <p class="mb-0" style="font-family: nintendoP;"></p>
+          </div>
+        </footer>
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          ></script>
+          <script src="js/script.js"></script>
+    </main>
+   </body>
+</html>
