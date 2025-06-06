@@ -135,7 +135,7 @@ main::after {
 }
 
 .wishlist-title {
-	font-family: 'Starjedi';
+	font-family: 'Starjedi'!important;
 	color: #45a29e; /* azul agua tipo Star Wars */
 	margin-top: 0;
 	/* elimina margen superior */
@@ -167,15 +167,6 @@ main::after {
 	justify-content: center;
 	align-items: center;
 	gap: 2px;
-}
-
-.videoinfo {
-	height: 80%;
-	padding-left: 10px;
-	padding-right: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .custom-bg {
