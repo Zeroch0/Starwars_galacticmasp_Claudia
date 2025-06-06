@@ -8,6 +8,21 @@
   font-family: 'Gotham-Book';
   src: url('../Fonts/Gotham-Book.otf') format('truetype'); 
 }
+@font-face {
+  font-family: 'Starjout';
+  src: url('../Fonts/Starjout.ttf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'Startjedi';
+  src: url('../Fonts/Starjedi.ttf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'Starjhol';
+  src: url('../Fonts/Starjhol.ttf') format('truetype'); 
+}
+
 
 /* Reglas globales */
 body {
@@ -87,10 +102,8 @@ img {
 
 /* Imagen de inicio */
 .imageninicio {
-	display: flex;
+    display: inline-block; /* Se ajusta al tamaño del contenido */
 	justify-content: center;
-	align-items: flex-start;
-	height: 75vh;
 	overflow: hidden;
 	padding-top: 2%;
 	padding-bottom: 1%;
@@ -122,14 +135,14 @@ main::after {
 }
 
 .wishlist-title {
-	font-family: Gotham-Book;
+	font-family: 'Gotham-Book';
 	color: #45a29e; /* azul agua tipo Star Wars */
 	margin-top: 0;
 	/* elimina margen superior */
 }
 
 .info {
-	font-family: Gotham-Book;
+	font-family: 'Gotham-Book';
 	color: #66fcf1; /* azul neón */
 	padding: 5px;
 	margin-bottom: 100px;
@@ -143,7 +156,7 @@ main::after {
 }
 
 .info1 {
-	font-family: Gotham-Book;
+	font-family: 'Gotham-Book';
 	color: #66fcf1;
 	padding: 5px;
 	margin-bottom: 100px;
@@ -180,7 +193,7 @@ main::after {
 .about-title {
 	color: #45a29e;
 	font-weight: bold;
-	font-family: Gotham-Book;
+	font-family: 'Gotham-Book';
 }
 
 /* Ajustes para mostrar 4 imágenes en fila y más pequeñas */
@@ -204,13 +217,13 @@ main::after {
 	color: #45a29e;
 	max-width: 800px;
 	margin: 0 auto;
-	font-family: Gotham-Book;
+	font-family: 'Gotham-Book';
 }
 
 .btn-tab {
 	background-color: #ff6f00;
 	color: #0b0c10;
-	font-family: Gotham-Book;
+	font-family: 'Gotham-Book';
 	border: 2px solid #ff6f00;
 	padding: 10px 20px;
 	transition: all 0.3s ease;
@@ -226,7 +239,7 @@ main::after {
 	background-color: #45a29e;
 	color: black;
 	font-weight: 500;
-	font-family: Gotham-Book;
+	font-family: 'Gotham-Book';
 }
 
 .my-4 {
@@ -249,7 +262,7 @@ main::after {
 }
 
 h1 {
-	font-family: Gotham-Book;
+	font-family: 'Startjedi';
 	font-size: 2.5rem;
 	text-align: center;
 	margin-bottom: 20px;
@@ -265,7 +278,7 @@ h1 {
 	padding-bottom: 1.5rem;
 	border-radius: 1rem;
 	color: #ff6f00;
-	font-family: Gotham-Book;
+	font-family: 'Gotham-Book';
 }
 
 @media (min-width: 992px) {

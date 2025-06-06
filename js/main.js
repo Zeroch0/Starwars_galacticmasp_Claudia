@@ -33,3 +33,4 @@ document.getElementById('start-button').addEventListener('click', function() {
     mainMap.classList.add('fade-in');
   }, 1500);
 });
+
