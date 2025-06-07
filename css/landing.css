@@ -9,20 +9,9 @@
   src: url('../Fonts/Gotham-Book.otf') format('truetype'); 
 }
 @font-face {
-  font-family: 'Starjout';
-  src: url('../Fonts/Starjout.ttf') format('truetype'); 
+  font-family: 'Starwars';
+  src: url("../Fonts/SF\ Distant\ Galaxy\ Symbols.ttf") format("truetype"); 
 }
-
-@font-face {
-  font-family: 'Startjedi';
-  src: url('../Fonts/Starjedi.ttf') format('truetype'); 
-}
-
-@font-face {
-  font-family: 'Starjhol';
-  src: url('../Fonts/Starjhol.ttf') format('truetype'); 
-}
-
 
 /* Reglas globales */
 body {
@@ -116,7 +105,7 @@ img {
 
 main {
 	position: relative;
-	background: url('/media/landing/fondo.jpg') no-repeat center center;
+	background: url("../media/landing/fondo.jpg") no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 	min-height: 100vh;
@@ -135,7 +124,7 @@ main::after {
 }
 
 .wishlist-title {
-	font-family: 'Starjedi'!important;
+	font-family: "Starwars"!important;
 	color: #45a29e; /* azul agua tipo Star Wars */
 	margin-top: 0;
 	/* elimina margen superior */
