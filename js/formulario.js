@@ -37,3 +37,6 @@ if (form) {
 		form.classList.add('was-validated');
 	}, false);
 }
+document.querySelectorAll('.fw-bold').forEach(el => {
+  el.classList.remove('fw-bold');
+});
