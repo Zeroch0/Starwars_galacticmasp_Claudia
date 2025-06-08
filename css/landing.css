@@ -1,16 +1,24 @@
 /* Definir fuentes */
 @font-face {
   font-family: 'Aurebesh';
-  src: url('../Fonts/Aurebesh.otf') format('opentype');
+  src: url("../Fonts/Aurebesh.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Gotham-Book';
-  src: url('../Fonts/Gotham-Book.otf') format('truetype'); 
+  src: url("../Fonts/Gotham-Book.otf") format("truetype"); 
 }
 @font-face {
-  font-family: 'Starwars';
-  src: url("../Fonts/SF\ Distant\ Galaxy\ Symbols.ttf") format("truetype"); 
+  font-family: 'SW_simbolos';
+  src: url("../Fonts/SW_symbolos.ttf") format("truetype"); 
+}
+@font-face {
+  font-family: 'SW_negra';
+  src: url("../Fonts/SW_Negra.ttf") format("truetype"); 
+}
+@font-face {
+  font-family: 'SW_hollow';
+  src: url("../Fonts/SW_Hollow.ttf") format("truetype"); 
 }
 
 /* Reglas globales */
@@ -37,7 +45,7 @@ img {
 	align-items: center;
 	padding: 20px;
 	gap: 20px;
-	font-family: Gotham-Book;
+	font-family: "Gotham-Book";
 	position: sticky;
 	top: 0;
 	z-index: 1000;
@@ -89,14 +97,6 @@ img {
 	color: #f0f0f0 !important; /* blanco claro */
 }
 
-/* Imagen de inicio */
-.imageninicio {
-    display: inline-block; /* Se ajusta al tamaño del contenido */
-	justify-content: center;
-	overflow: hidden;
-	padding-top: 2%;
-	padding-bottom: 1%;
-}
 
 .imageninicio img {
 	width: auto;
@@ -123,16 +123,61 @@ main::after {
 	z-index: 1;
 }
 
-.wishlist-title {
-	font-family: "Starwars"!important;
+.trilogy-title {
+	font-family: "SW_simbolos"!important;
 	color: #45a29e; /* azul agua tipo Star Wars */
 	margin-top: 0;
+	font-size: 48px; /* Puedes ajustar este valor */
 	/* elimina margen superior */
 }
 
+
+.grid-titulos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.titulo-bloque {
+  text-align: center;
+}
+
+.symbolos {
+  font-family: "SW_simbolos" !important;
+  font-size: 15rem;
+  margin: 0;
+  margin-bottom: -50px;
+  background: linear-gradient(to bottom, #ffffff, #886d46); /* amarillo a naranja */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.subtitulo {
+ color: #886d46; 
+ margin-top: 0px;
+  font-family: 'Gotham-Book', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+   display: inline-block;
+margin-bottom: 50px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .grid-titulos {
+    grid-template-columns: 1fr;
+  }
+}
+
 .info {
-	font-family: 'Gotham-Book';
-	color: #66fcf1; /* azul neón */
+	font-family: "Gotham-Book";
+	color: #ffffff; 
 	padding: 5px;
 	margin-bottom: 100px;
 	text-align: center;
@@ -145,8 +190,8 @@ main::after {
 }
 
 .info1 {
-	font-family: 'Gotham-Book';
-	color: #66fcf1;
+	font-family: "Gotham-Book";
+	color: #ffffff;
 	padding: 5px;
 	margin-bottom: 100px;
 	text-align: center;
@@ -170,7 +215,7 @@ main::after {
 }
 
 /* Título */
-.about-title {
+.planet-title {
 	color: #45a29e;
 	font-weight: bold;
 	font-family: 'Gotham-Book';
@@ -189,7 +234,6 @@ main::after {
 	max-width: 22%;
 	text-align: center;
 }
-
 
 /* Descripción inferior */
 .about-description {
