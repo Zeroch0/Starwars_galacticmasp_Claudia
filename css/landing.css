@@ -189,7 +189,7 @@ main::after {
 }
 
 .subtitulo {
- color: #975b08; 
+ color: #ce8c30; 
  margin-top: 0px;
  font-family: "Roboto";
   font-weight: bold;   
@@ -198,12 +198,30 @@ margin: 0;
 display: inline-block;
 }
 
+.symbol-link:hover .symbolos {
+  transform: scale(1.2);
+  cursor: pointer;
+  background: linear-gradient(to bottom, #ffffff, #f6ea15); /* amarillo a naranja */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.symbol-link:hover .symbolos,
+.symbol-link:hover .subtitulo {
+	transform: scale(1.1);
+  color: #ffd700; /* Color de hover, por ejemplo dorado */
+}
+
+
 /* Responsive para pantallas pequeñas */
 @media (max-width: 768px) {
   .grid-titulos {
     grid-template-columns: 1fr;
   }
-}d
+}
 
 .info {
 	font-family: "Gotham-Book";
@@ -220,7 +238,7 @@ display: inline-block;
 }
 
 .info1 {
-  font-family: ""Gotham-Book"";
+  font-family: "Gotham-Book";
   color: #ffffff;
   padding: 5px;
   text-align: center;
@@ -230,6 +248,13 @@ display: inline-block;
   align-items: center;      
   height: 200px; 
   font-size: 20px;
+}
+.about-title{
+  font-family: "SW_Hollow";
+  color: #e8b11a;
+  text-align: center;
+  justify-content: center;      
+  font-size: 40px;
 }
 
 
@@ -243,13 +268,6 @@ display: inline-block;
 	border-radius: 1rem;
 }
 
-
-/* Título */
-.planet-title {
-	color: #45a29e;
-	font-weight: bold;
-	font-family: 'Gotham-Book';
-}
 .planet-name {
 	margin-top: 10px;
   color: rgb(220, 194, 25) !important;
@@ -269,15 +287,6 @@ display: inline-block;
 	flex: 0 0 22%;
 	max-width: 22%;
 	text-align: center;
-}
-
-/* Descripción inferior */
-.about-description {
-	font-weight: 500;
-	color: #45a29e;
-	max-width: 800px;
-	margin: 0 auto;
-	font-family: 'Gotham-Book';
 }
 
 .btn-tab {
@@ -471,11 +480,11 @@ footer a:hover {
 	font-family: Gotham-Book;
 }
   /* Para que el dropdown abra al hacer hover y no solo al click */
-  .dropdown-hover:hover > .dropdown-menu {
+.dropdown-hover:hover > .dropdown-menu {
     display: block;
-  }
+}
   /* Para que no se cierre cuando pasas el mouse en el menú */
-  .dropdown-menu {
+.dropdown-menu {
     margin-top: 0;
-  }
+}
 
