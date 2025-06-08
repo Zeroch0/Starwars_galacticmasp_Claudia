@@ -15,6 +15,12 @@
   font-family: 'SW_hollow';
   src: url("../Fonts/SW_Hollow.ttf") format("truetype"); 
 }
+@font-face {
+    font-family: 'Shadow of Xizor';
+    src: url("../Fonts/ShadowofXizor.woff2") format('woff2'),
+        url("../Fonts/ShadowofXizor.woff") format('woff');
+}
+
 
 /* Reglas globales */
 body {
@@ -117,6 +123,13 @@ main::after {
 	pointer-events: none;
 	z-index: 1;
 }
+#about-info {
+  border-radius: 1rem;
+  background: 
+    linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0)),
+    #481754;
+}
+
 .custom-bg-anakin {
   background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0)), #541717;
 }
@@ -129,37 +142,34 @@ main::after {
 	font-family: "SW_Negra"!important;
 	background: linear-gradient(to bottom, rgba(255, 0, 0, 0.8) , #330f0f);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	color: transparent;
 	margin-top: 0;
 	font-size: 48px; 
 	margin-bottom: 50px;
+	margin-top: 50px;
 }
 .trilogy-title-l {
 	font-weight: 0!important;
 	font-family: "SW_Negra"!important;
 	background: linear-gradient(to bottom,#187728, rgba(255, 255, 255, 0.8));
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	color: transparent;
 	margin-top: 0;
 	font-size: 48px; 
 	margin-bottom: 50px;
+	margin-top: 50px;
 }
-
-
 
 .grid-titulos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center; /* centra horizontalmente los items */
   gap: 2rem;
-  align-items: center;
-  justify-items: center;
-  margin-top: 2rem;
-  margin-bottom: 50px;
+  width: 100%;             /* ocupa todo el ancho del contenedor padre */
+  margin: 0 auto;
 }
+
 
 .titulo-bloque {
   text-align: center;
@@ -170,7 +180,7 @@ main::after {
   font-size: 15rem;
   margin: 0;
   margin-bottom: -50px;
-  background: linear-gradient(to bottom, #ffffff, #886d46); /* amarillo a naranja */
+  background: linear-gradient(to bottom, #ffffff, #b37c2f); /* amarillo a naranja */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -179,12 +189,13 @@ main::after {
 }
 
 .subtitulo {
- color: #886d46; 
+ color: #975b08; 
  margin-top: 0px;
-  font-family: 'Gotham-Book', sans-serif;
-  font-size: 3rem;
-  margin: 0;
-   display: inline-block;
+ font-family: "Roboto";
+  font-weight: bold;   
+font-size: 3rem;
+margin: 0;
+display: inline-block;
 }
 
 /* Responsive para pantallas pequeñas */
@@ -192,7 +203,7 @@ main::after {
   .grid-titulos {
     grid-template-columns: 1fr;
   }
-}
+}d
 
 .info {
 	font-family: "Gotham-Book";
@@ -209,18 +220,18 @@ main::after {
 }
 
 .info1 {
-	font-family: "Gotham-Book";
-	color: #ffffff;
-	padding: 5px;
-	margin-bottom: 100px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 2px;
+  font-family: ""Gotham-Book"";
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;      
+  height: 200px; 
+  font-size: 20px;
 }
+
 
 .custom-bg {
 	background-color: #1f2833;
@@ -459,4 +470,12 @@ footer a:hover {
 	color: #66fcf1;
 	font-family: Gotham-Book;
 }
+  /* Para que el dropdown abra al hacer hover y no solo al click */
+  .dropdown-hover:hover > .dropdown-menu {
+    display: block;
+  }
+  /* Para que no se cierre cuando pasas el mouse en el menú */
+  .dropdown-menu {
+    margin-top: 0;
+  }
 
