@@ -239,6 +239,12 @@ main::after {
 	font-weight: bold;
 	font-family: 'Gotham-Book';
 }
+.planet-name {
+	margin-top: 10px;
+  color: rgb(220, 194, 25) !important;
+  font-family: "SW_Hollow";
+  font-size: 2.5rem;
+}
 
 /* Ajustes para mostrar 4 imágenes en fila y más pequeñas */
 .about-container .row.text-center.justify-content-center {
