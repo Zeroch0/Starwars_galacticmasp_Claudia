@@ -72,6 +72,22 @@
     </div>
   </div>
 </section>
+<section class="about-section py-5">
+<div id="about-info" class="container about-container-narrow p-4">
+  <h2 class="text-center about-title mb-5"> 🌠¡Prepárate para explorar! 🌠 </h2>   
+  <div class="info1">
+    <div class="col-12 text-center">
+        <p class="mt-4">
+          A través del <strong>Mapa Intergaláctico</strong>, podrás explorar todos estos planetas, descubrir detalles únicos y sumergirte en la galaxia como nunca antes.
+        </p>
+        <p>
+          <a href="/html/mapa.html" class="btn btn-outline-light mt-2">Ir al Mapa Intergaláctico</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
     <!-- ANAKIN -->
 <div class="grid-titulos">
@@ -154,20 +170,20 @@
         <section class="about-section py-5">
           <div class="container about-container p-4">
             <div class="row text-center justify-content-center">
-              <div class="col-12 col-md-4 mb-4">
-                <img src="media/planetas/Naboo.png" alt="Planeta 1" class="img-fluid character-img mb-2">
+               <div class="planet-link" onclick="window.location.href='html/planet.html?id=8'" style="cursor: pointer;">
+                <img src="media/planetas/Naboo.png" alt="Naboo" class="img-fluid planet-img mb-2">
                 <h5 class="planet-name">Naboo</h5>
               </div>
-              <div class="col-12 col-md-4 mb-4">
-                <img src="media/planetas/coruscant.png" alt="Planeta 2" class="img-fluid character-img mb-2">
+               <div class="planet-link" onclick="window.location.href='html/planet.html?id=9'" style="cursor: pointer;">
+                <img src="media/planetas/coruscant.png" alt="Coruscant" class="img-fluid planet-img mb-2">
                 <h5 class="planet-name">Coruscant</h5>
               </div>
-              <div class="col-12 col-md-4 mb-4">
-                <img src="media/planetas/Alderaan.png" alt="Planeta 3" class="img-fluid character-img mb-2">
+               <div class="planet-link" onclick="window.location.href='html/planet.html?id=2'" style="cursor: pointer;">
+                <img src="media/planetas/Alderaan.png" alt="Alderaan" class="img-fluid planet-img mb-2">
                 <h5 class="planet-name">Alderaan</h5>
               </div>
-              <div class="col-12 col-md-4 mb-4">
-                <img src="media/planetas/Kamino.webp" alt="Planeta 4" class="img-fluid character-img mb-2">
+                <div class="planet-link" onclick="window.location.href='html/planet.html?id=10'" style="cursor: pointer;">
+                <img src="media/planetas/Kamino.webp" alt="Kamino" class="img-fluid planet-img mb-2">
                 <h5 class="planet-name">Kamino</h5>
               </div>
             </div>
@@ -264,19 +280,18 @@
       <div id="carouselLuke" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-inner rounded-3 overflow-hidden shadow">
-
           <!-- Primera slide -->
           <div class="carousel-item active">
             <div class="row text-center">
-              <div class="col-4">
-                <img src="media/planetas/tatooine.png" class="d-block w-100" alt="Tatooine">
-               <h5 class="planet-name">Tatooine</h5>
-              </div>
-              <div class="col-4">
+             <div class="col-4 col-hover planet-link"onclick="window.location.href='html/planet.html?id=1'" style="cursor: pointer;">
+              <img src="media/planetas/tatooine.png" class="d-block w-100" alt="Tatooine">
+              <h5 class="planet-name">Tatooine</h5>
+            </div>
+               <div class="col-4 col-hover planet-link"onclick="window.location.href='html/planet.html?id=7'" style="cursor: pointer;">
                 <img src="media/planetas/endor.png" class="d-block w-100" alt="Endor">
                 <h5 class="planet-name">Endor</h5>
               </div>
-              <div class="col-4">
+               <div class="col-4 col-hover planet-link"onclick="window.location.href='html/planet.html?id=4'" style="cursor: pointer;">
                 <img src="media/planetas/hoth1.png" class="d-block w-100" alt="Hoth">
                <h5 class="planet-name">Hoth</h5>
               </div>
@@ -286,15 +301,15 @@
           <!-- Segunda slide -->
           <div class="carousel-item">
             <div class="row text-center">
-              <div class="col-4">
+              <div class="col-4 col-hover planet-link"onclick="window.location.href='html/planet.html?id=5'" style="cursor: pointer;">
                 <img src="media/planetas/dagobah.png" class="d-block w-100" alt="Dagobah">
                <h5 class="planet-name">Dagobah</h5>
               </div>
-              <div class="col-4">
+               <div class="col-4 col-hover planet-link"onclick="window.location.href='html/planet.html?id=6'" style="cursor: pointer;">
                 <img src="media/planetas/bespin.gif" class="d-block w-100" alt="Bespin">
                 <h5 class="planet-name">Bespin</h5>
               </div>
-              <div class="col-4">
+               <div class="col-4 col-hover planet-link"onclick="window.location.href='html/planet.html?id=3'" style="cursor: pointer;">
                 <img src="media/planetas/Yavin.png" class="d-block w-100" alt="Yavin 4">
                 <h5 class="planet-name">Yavin 4</h5>
               </div>

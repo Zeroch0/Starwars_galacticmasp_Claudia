@@ -40,7 +40,7 @@ img {
 /* HEADER - Navbar */
 .container-fluid,
 .navbar-custom {
-	background-color: #1f2833; /* azul oscuro, casi negro */
+	background-color:  #1f2833;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -81,27 +81,15 @@ img {
 	margin: 0 auto;
 }
 
-.nav-btn {
-	background-color: #ff6f00 !important; /* naranja vibrante */
-	color: #0b0c10 !important; /* texto negro oscuro */
-	border: none !important;
-	font-family: Gotham-Book;
-	font-weight: bold;
-	padding: 10px 20px;
-	border-radius: 10px;
-	transition: background-color 0.3s ease, color 0.3s ease;
-	text-decoration: none;
-}
-
-.nav-btn:hover {
-	background-color: #e65c00 !important; /* naranja más oscuro */
-	color: #f0f0f0 !important; /* blanco claro */
-}
-
 
 .imageninicio img {
 	width: auto;
 	height: auto;
+}
+
+.about-container-narrow {
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 main {
@@ -209,10 +197,28 @@ display: inline-block;
   display: inline-block;
 }
 
+.planet-link:hover .planet-img,
 .symbol-link:hover .symbolos,
 .symbol-link:hover .subtitulo {
 	transform: scale(1.1);
-  color: #ffd700; /* Color de hover, por ejemplo dorado */
+}
+.col-hover {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.col-hover:hover {
+  transform: scale(1.03);
+}
+
+.col-hover:hover h5 {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.col-hover img,
+.col-hover h5 {
+  transition: transform 0.3s ease;
 }
 
 
@@ -289,40 +295,9 @@ display: inline-block;
 	text-align: center;
 }
 
-.btn-tab {
-	background-color: #ff6f00;
-	color: #0b0c10;
-	font-family: 'Gotham-Book';
-	border: 2px solid #ff6f00;
-	padding: 10px 20px;
-	transition: all 0.3s ease;
-	margin-top: 10%;
-}
-
-.btn-tab:hover {
-	background-color: #e65c00;
-	color: #f0f0f0;
-}
-
-.btn-tab.active-tab {
-	background-color: #45a29e;
-	color: black;
-	font-weight: 500;
-	font-family: 'Gotham-Book';
-}
-
 .my-4 {
 	margin-top: 0rem !important;
 	margin-bottom: 1.5rem !important;
-}
-
-.translucent-green-bg {
-	background-color: rgba(69, 162, 158, 0.6);
-	border-radius: 80px;
-	padding: 40px;
-	max-width: 90%;
-	margin: 0 auto;
-	/* centra horizontalmente */
 }
 
 .row.justify-content-center {
@@ -380,38 +355,6 @@ h1 {
 	background-color: rgba(69, 162, 158, 0.7);
 }
 
-/* Título REGISTER (NO CAMBIAR COLOR) */
-.register-title {
-	font-size: 3rem;
-	color: #ff6f00;
-	font-family: "Gotham-Book";
-	text-align: center;
-	margin-bottom: 1.5rem;
-}
-
-/* Inputs personalizados */
-.custom-input {
-	background-color: #1f2833 !important;
-	border: none !important;
-	color: #66fcf1;
-	font-family: "Gotham-Book";
-}
-
-/* Placeholder en azul claro */
-.custom-input::placeholder {
-	color: #66fcf1;
-	opacity: 1;
-	/* Para asegurar que se vea bien */
-}
-
-/* Contenedor del botón con fondo naranja */
-.btn-container {
-	background-color: #ff6f00;
-	padding: 0.75rem;
-	border-radius: 10px;
-	text-align: center;
-}
-
 /* Botón personalizado */
 .custom-btn {
 	background-color: #1f2833;
@@ -427,17 +370,6 @@ h1 {
 	color: #1f2833;
 }
 
-/* Aplicar fuente y color a otros elementos */
-form,
-.form-label,
-.form-check-label,
-.input-group-text,
-.invalid-feedback,
-.valid-feedback {
-	font-family: "Gotham-Book" !important;
-	color: #66fcf1;
-}
-
 .details {
 	display: flex;
 	justify-content: center;
@@ -451,13 +383,6 @@ form,
 .detalles {
 	text-align: center;
 	font-family: Gotham-Book;
-}
-
-
-footer {
-	font-family: Gotham-Book;
-	background-color: #1f2833;
-	color: #66fcf1;
 }
 
 footer a:hover {
@@ -477,7 +402,6 @@ footer a:hover {
 .custom-footer {
 	background-color: #141414;
 	color: #66fcf1;
-	font-family: Gotham-Book;
 }
   /* Para que el dropdown abra al hacer hover y no solo al click */
 .dropdown-hover:hover > .dropdown-menu {
