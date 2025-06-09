@@ -456,3 +456,27 @@ footer a:hover {
     margin: 0; /* asegura que no haya espacios innecesarios */
   }
 }
+@media (max-width: 768px) {
+  .grid-titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0; /* sin separación entre elementos */
+    width: 100%;
+  }
+
+  .grid-titulos h3,
+  .grid-titulos h4 {
+    width: 100%;
+    margin: 0;
+    padding: 0; /* elimina rellenos que generen espacio */
+    box-sizing: border-box; /* asegura que el padding no desborde */
+  }
+    .nav-links-centered {
+    display: none; /* oculta el menú centrado en móviles */
+  }
+
+  /* Podrías mostrar un botón hamburguesa aquí */
+}
+
+

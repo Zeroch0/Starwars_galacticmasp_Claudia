@@ -10,43 +10,52 @@
     <body>
       <main>
 <!-- Sticky Header -->
-        <header class="sticky-top bg-dark">
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
-            <img src="media/logo.png" alt="Logo" style="width: 80px; height: auto; margin-left: 20px;" />
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav gap-3">
-<!-- Mapa Galáctico enlace directo -->
-              <li class="nav-item">
-                <a class="nav-link" href="html/mapa.html">Mapa Galáctico</a>
-              </li>
-<!-- Dropdown Precuelas -->
-              <li class="nav-item dropdown dropdown-hover">
-                <a class="nav-link dropdown-toggle" href="#" id="precuelasDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Trilogía de Anakin</a>
-                <ul class="dropdown-menu" aria-labelledby="precuelasDropdown">
-                  <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=8'">Naboo</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=9'">Coruscant</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=2'">Alderaan</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=10'">Kamino</a></li>
-               </ul>
-              </li>
-<!-- Dropdown Original -->
-              <li class="nav-item dropdown dropdown-hover">
-                <a class="nav-link dropdown-toggle" href="#" id="originalDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Trilogía de Luke</a>
-                <ul class="dropdown-menu" aria-labelledby="originalDropdown">
-                  <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=1'">Tatooine</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=3'">Yavin 4</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=4'">Hoth</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=7'">Endor</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=5'">Dagobah</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=6'">Bespin</a></li>
-                </ul>
-              </li>
+ <header class="bg-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="media/logo.png" alt="Logo" style="width: 80px; height: auto;" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <!-- Aquí tus items -->
+          <li class="nav-item">
+            <a class="nav-link" href="html/mapa.html">Mapa Galáctico</a>
+          </li>
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" href="#" id="precuelasDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Trilogía de Anakin</a>
+            <ul class="dropdown-menu" aria-labelledby="precuelasDropdown">
+              <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=8'">Naboo</a></li>
+              <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=9'">Coruscant</a></li>
+              <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=2'">Alderaan</a></li>
+              <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=10'">Kamino</a></li>
             </ul>
-          </div>
-           </nav>
-        </header>
+          </li>
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" href="#" id="originalDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Trilogía de Luke</a>
+            <ul class="dropdown-menu" aria-labelledby="originalDropdown">
+              <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=1'">Tatooine</a></li>
+              <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=3'">Yavin 4</a></li>
+              <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=4'">Hoth</a></li>
+              <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=7'">Endor</a></li>
+              <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=5'">Dagobah</a></li>
+              <li><a class="dropdown-item" href="#" onclick="window.location.href='html/planet.html?id=6'">Bespin</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
      <!--info -->
         <section class="about-section py-5">
   <div id="about-info" class="container about-container p-4">
