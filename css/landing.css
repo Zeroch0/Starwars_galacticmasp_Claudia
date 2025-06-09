@@ -478,5 +478,32 @@ footer a:hover {
 
   /* Podrías mostrar un botón hamburguesa aquí */
 }
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: clamp(14px, 3vw, 18px);
+  line-height: 1.4;
+}
+
+@media (max-width: 400px) {
+ html {
+  font-size: clamp(12px, 1.5vw, 18px);
+}
+
+h1, h2, h3, h4, h5, p, button,.planet-name {
+  font-size: 1rem; 
+}
+}
+@media (max-width: 1200px) {
+.planet-name {
+  font-size: 0.8rem;
+}
+}
+body, html {
+  overflow-x: hidden;
+}
 
 
