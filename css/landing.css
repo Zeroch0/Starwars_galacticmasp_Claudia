@@ -420,6 +420,13 @@ body, html {
   h1, h2, h3, h4, h5, p, button, .planet-name {
     font-size: 1rem;
   }
+  .symbolos {
+  font-size: 8rem;
+}
+
+.subtitulo {
+font-size: 2rem;
+}
 }
 
 /* Para pantallas menores o iguales a 1200px */
