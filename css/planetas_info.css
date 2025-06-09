@@ -137,3 +137,13 @@ body, html {
     height: 100%;
   }
 }
+/* Para pantallas menores o iguales a 400px */
+@media (max-width: 400px) {
+  #planet-info  {
+    font-size: clamp(12px, 1.5vw, 18px);
+        font-size: 0.8rem;
+  }
+  .titulo-planeta {
+  font-size: 3rem;
+}
+}
