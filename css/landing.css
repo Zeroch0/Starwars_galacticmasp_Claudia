@@ -1,4 +1,4 @@
-/* Definir fuentes */
+/* FUENTES*/
 @font-face {
   font-family: 'Gotham-Book';
   src: url("../Fonts/Gotham-Book.otf") format("truetype"); 
@@ -30,7 +30,12 @@ body {
 	background-color: #0b0c10; /* fondo oscuro estilo espacio */
 	color: #c5c6c7; /* gris claro para texto */
 }
-
+/* Logo */
+.navbar-brand {
+	width: 50px;
+	height: 50px;
+	margin-right: auto;
+}
 img {
 	width: 100%;
 	height: auto;
@@ -40,45 +45,38 @@ img {
 /* HEADER - Navbar */
 .container-fluid,
 .navbar-custom {
-	background-color:  #1f2833;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px;
-	gap: 20px;
-	font-family: "Gotham-Book";
-	position: sticky;
-	top: 0;
-	z-index: 1000;
-}
-
-/* Logo */
-.navbar-brand {
-	width: 50px;
-	height: 50px;
-	margin-right: auto;
+  background-color: #1f2833;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  font-family: "Gotham-Book";
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-brand .imagen-logo {
-	width: 50px;
-	height: 50px;
-	padding: 10%;
-	display: flex;
-	align-items: center;
-	transition: transform 0.3s;
+  width: 50px;
+  height: 50px;
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
 }
 
 .navbar-brand .imagen-logo:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Navegación centrada */
 .nav-links-centered {
-	display: flex;
-	gap: 20px;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
 }
 
 
@@ -228,28 +226,6 @@ display: inline-block;
   transition: transform 0.3s ease;
 }
 
-
-/* Responsive para pantallas pequeñas */
-@media (max-width: 768px) {
-  .grid-titulos {
-    grid-template-columns: 1fr;
-  }
-}
-
-.info {
-	font-family: "Gotham-Book";
-	color: #ffffff; 
-	padding: 5px;
-	margin-bottom: 100px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 2px;
-}
-
 .info1 {
   font-family: "Gotham-Book";
   color: #ffffff;
@@ -320,57 +296,11 @@ h1 {
 	color: #66fcf1;
 }
 
-.box-title {
-	background-color: #1f2833;
-	margin-left: 45rem;
-	margin-right: 45rem;
-	margin-top: 4rem;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	border-radius: 1rem;
-	color: #ff6f00;
-	font-family: 'Gotham-Book';
-}
-
-@media (min-width: 992px) {
-	.col-lg-2-4 {
-		flex: 0 0 auto;
-		width: 20%;
-	}
-}
-
 .bg-form {
 	background-color: transparent !important;
 	padding: 2rem;
 }
 
-/* Estilos del formulario */
-.form-custom {
-	max-width: 550px;
-	width: 100%;
-	background-color: #1f2833;
-	font-family: "Gotham-Book";
-	padding: 2rem;
-	border-radius: 1rem;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
-	color: #66fcf1;
-	/* Color general del texto */
-}
-
-/* Fondo semitransparente azul */
-.translucent-bg {
-	background-color: rgba(69, 162, 158, 0.7);
-}
-
-/* Botón personalizado */
-.custom-btn {
-	background-color: #1f2833;
-	color: #ff6f00;
-	font-weight: bold;
-	font-family: "Gotham-Book";
-	border: none;
-	transition: background-color 0.3s ease;
-}
 
 .custom-btn:hover {
 	background-color: #45a29e;
@@ -441,43 +371,6 @@ footer a:hover {
 .planet-name {
   max-width: 100%;
 }
-
-@media (max-width: 768px) {
-  .grid-titulos {
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* o 'center' si prefieres centrado */
-    gap: 0.5rem; /* espacio entre h3 y h4 */
-  }
-
-  .grid-titulos h3,
-  .grid-titulos h4 {
-    width: 100%;
-    margin: 0; /* asegura que no haya espacios innecesarios */
-  }
-}
-@media (max-width: 768px) {
-  .grid-titulos {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0; /* sin separación entre elementos */
-    width: 100%;
-  }
-
-  .grid-titulos h3,
-  .grid-titulos h4 {
-    width: 100%;
-    margin: 0;
-    padding: 0; /* elimina rellenos que generen espacio */
-    box-sizing: border-box; /* asegura que el padding no desborde */
-  }
-    .nav-links-centered {
-    display: none; /* oculta el menú centrado en móviles */
-  }
-
-  /* Podrías mostrar un botón hamburguesa aquí */
-}
 body {
   margin: 20px;
   font-family: Arial, sans-serif;
@@ -487,23 +380,62 @@ p {
   font-size: clamp(14px, 3vw, 18px);
   line-height: 1.4;
 }
-
-@media (max-width: 400px) {
- html {
-  font-size: clamp(12px, 1.5vw, 18px);
-}
-
-h1, h2, h3, h4, h5, p, button,.planet-name {
-  font-size: 1rem; 
-}
-}
-@media (max-width: 1200px) {
-.planet-name {
-  font-size: 0.8rem;
-}
-}
 body, html {
   overflow-x: hidden;
 }
+
+/* MEDIA */
+
+/* Para pantallas menores o iguales a 768px */
+@media (max-width: 768px) {
+  .grid-titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* mejor para ajustar todo al ancho */
+    gap: 0; /* sin separación */
+    width: 100%;
+    grid-template-columns: 1fr; /* si usas grid, esta línea queda por si acaso */
+  }
+
+  .grid-titulos h3,
+  .grid-titulos h4 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nav-links-centered {
+    display: none; /* oculta menú centrado en móviles */
+  }
+
+}
+
+/* Para pantallas menores o iguales a 400px */
+@media (max-width: 400px) {
+  html {
+    font-size: clamp(12px, 1.5vw, 18px);
+  }
+
+  h1, h2, h3, h4, h5, p, button, .planet-name {
+    font-size: 1rem;
+  }
+}
+
+/* Para pantallas menores o iguales a 1200px */
+@media (max-width: 1200px) {
+  .planet-name {
+    font-size: 0.8rem;
+  }
+}
+
+/* Para pantallas mayores o iguales a 992px */
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+
 
 
