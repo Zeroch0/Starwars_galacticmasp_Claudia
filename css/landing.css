@@ -422,11 +422,14 @@ body, html {
   }
   .symbolos {
   font-size: 8rem;
-}
+  }
+  .subtitulo {
+  font-size: 2rem;
+  }
+  .info1 {
+  font-size: 1rem;
+  }
 
-.subtitulo {
-font-size: 2rem;
-}
 }
 
 /* Para pantallas menores o iguales a 1200px */
